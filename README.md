@@ -5,6 +5,9 @@
   <img src="https://img.shields.io/badge/Ubuntu-22.04-E95420?style=for-the-badge&logo=ubuntu&logoColor=white">
   <img src="https://img.shields.io/badge/Windows-10-0078D6?style=for-the-badge&logo=windows&logoColor=white">
   <img src="https://img.shields.io/badge/VirtualBox-Lab-2F61B4?style=for-the-badge">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="MIT License">
+  </a>
 </p>
 
 ---
@@ -50,6 +53,58 @@ This project was created to gain practical experience with SIEM deployment and S
 | Monitoring | File Integrity Monitoring (FIM) |
 | Log Source | Windows Event Logs |
 | Network | Bridged Adapter |
+
+---
+
+# ❓ Why Wazuh?
+
+Wazuh is an open-source **Security Information and Event Management (SIEM)** and **Extended Detection and Response (XDR)** platform designed to help organizations detect, investigate, and respond to security threats.
+
+Key capabilities include:
+
+- Centralized log collection and analysis
+- Real-time threat detection
+- File Integrity Monitoring (FIM)
+- Vulnerability detection
+- Security configuration assessment
+- Endpoint monitoring
+- Compliance reporting
+- Incident investigation and threat hunting
+
+This lab demonstrates how Wazuh can be used to monitor endpoints, collect security events, and investigate alerts within a centralized security monitoring environment.
+
+---
+
+# 📋 Prerequisites
+
+Before deploying this lab, ensure you have the following:
+
+- Oracle VirtualBox
+- Ubuntu Server 22.04 LTS ISO
+- Windows 10 ISO
+- Minimum 8 GB RAM (16 GB recommended)
+- At least 60 GB of available disk space
+- Internet connectivity for package installation
+- Basic knowledge of Linux command-line administration
+
+---
+
+# ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone [https://github.com/your-username/Wazuh-SIEM-Lab.git](https://github.com/Wolf1904/Wazuh-SIEM-Home-Lab.git)
+cd Wazuh-SIEM-Home-Lab
+```
+
+Follow the detailed deployment guide available in:
+
+- `docs/installation-notes.md` – Complete installation and deployment steps
+- `configs/manager-notes.md` – Wazuh Manager configuration notes
+- `configs/ossec.conf` – Sample Wazuh Manager configuration used in this lab
+
+After completing the installation, register the Windows agent with the Wazuh Manager and verify connectivity through the Wazuh Dashboard.
 
 ---
 
